@@ -13,6 +13,10 @@ pnpm dev
 # or
 bun dev
 ```
+Use this to install the modules
+```
+npm install --force && npm install theme-provider@latest --force && npm install stripe --force
+```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
