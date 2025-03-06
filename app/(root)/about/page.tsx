@@ -14,7 +14,7 @@ export default function AboutPage() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-4">Our Story</h2>
           <p className="text-muted-foreground mb-6">
-            Founded in 2024, eventTrendz has grown to become one of the leading entertainment ticketing platforms. We
+            Founded in 2025, eventTrendz has grown to become one of the leading entertainment ticketing platforms. We
             connect millions of fans to their favorite movies, shows, and events, making entertainment accessible to
             everyone.
           </p>
