@@ -3,6 +3,7 @@ import { Poppins } from 'next/font/google'
 import { ClerkProvider } from '@clerk/nextjs';
 
 import './globals.css'
+import { Images } from 'lucide-react';
 
 
 const poppins = Poppins({
