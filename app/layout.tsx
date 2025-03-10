@@ -28,6 +28,7 @@ export const metadata: Metadata = {
       name: "Prashant Kumar Jha",
     },
   ],
+  verification: { google: "google-site-verification=i-etq81HilCZ782xqbgJsmVlLZ9LdgM2P7Sgd22u5Og" },
 };
 
 export default function RootLayout({
