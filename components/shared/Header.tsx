@@ -66,9 +66,6 @@ export default function Header() {
             <Link href="/pricing" className="font-medium hover:text-primary">
               Pricing
             </Link>
-            <Link href="/blog" className="font-medium hover:text-primary">
-              Blog
-            </Link>
             <Link href="/contact" className="font-medium hover:text-primary">
               Contact
             </Link>
