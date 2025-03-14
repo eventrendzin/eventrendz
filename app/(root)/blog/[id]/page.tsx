@@ -170,7 +170,7 @@ const blogPost = {
     "Discover the latest trends shaping corporate events in 2025, from immersive technologies to sustainable practices.",
   image: "/placeholder.svg?height=600&width=1200",
   date: "March 15, 2025",
-  author: "Alex Morgan",
+  author: "Prashant Kumar Jha",
   authorTitle: "Founder & CEO",
   authorImage: "/placeholder.svg?height=200&width=200",
   readTime: "8 min read",
