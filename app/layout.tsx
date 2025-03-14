@@ -18,17 +18,27 @@ export const metadata: Metadata = {
     default: "evenTrendz - Movies, Events & More",
     template: "%s | evenTrendz",
   },
-  icons: {
-    icon: '@app/favicon.ico',
-  },
+  
+  verification: { google: "google-site-verification=i-etq81HilCZ782xqbgJsmVlLZ9LdgM2P7Sgd22u5Og" },
+
   description:
-    "Book movie tickets, event tickets and more at evenTrendz. Your one-stop destination for entertainment.",
+    "evenTrendz is your premier event management company, specializing in seamless corporate events, weddings, and more. With a focus on creativity, precision, and customer satisfaction, we ensure every detail is perfectly tailored to exceed your expectations and create unforgettable experiences.",
+  keywords: "event management, corporate events, wedding planning, conference organization, event planner, premier event management company, evenTrendz",
   authors: [
     {
       name: "Prashant Kumar Jha",
     },
   ],
-  verification: { google: "google-site-verification=i-etq81HilCZ782xqbgJsmVlLZ9LdgM2P7Sgd22u5Og" },
+  creator: "evenTrendz",
+  publisher: "evenTrendz",
+  icons: {
+    icon: '@app/favicon.ico',
+  },
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
 };
 
 export default function RootLayout({
@@ -37,10 +47,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <ClerkProvider>
       <html lang="en">
         <body className={poppins.variable}>{children}</body>
       </html>
-    </ClerkProvider>
   )
 }

@@ -18,7 +18,7 @@ export default function Footer() {
               <a href="#" className="text-muted-foreground hover:text-primary">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary">
+              <a href="https://www.instagram.com/prashantjha.11/" className="text-muted-foreground hover:text-primary">
                 <Instagram className="h-5 w-5" />
               </a>
               <a href="#" className="text-muted-foreground hover:text-primary">
