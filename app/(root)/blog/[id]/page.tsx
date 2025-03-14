@@ -1,6 +1,3 @@
-'use client';
-
-import { useRouter } from 'next/router'; // Import Next.js router if needed
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
@@ -12,8 +9,10 @@ const blogPost = {
   title: "10 Corporate Event Trends to Watch in 2025",
   content: `
     <h2>Introduction</h2>
-    <p>Corporate events continue to evolve as technology advances...</p>`, // shortened for brevity
-  excerpt: "Discover the latest trends shaping corporate events in 2025, from immersive technologies to sustainable practices.",
+    <p>Corporate events continue to evolve as technology advances...</p>
+    <!-- The rest of the content remains unchanged -->
+  `,
+  excerpt: "Discover the latest trends shaping corporate events in 2025...",
   image: "/placeholder.svg?height=600&width=1200",
   date: "March 15, 2025",
   author: "Alex Morgan",
@@ -24,14 +23,36 @@ const blogPost = {
   tags: ["Corporate Events", "Event Planning", "Technology", "Sustainability", "2025 Trends"],
 }
 
-// Assuming that `params` is passed from Next.js routing dynamically
-export default function BlogPostPage({ params }: { params: { id: string } }) {
-  const router = useRouter();
-  
-  // Assuming params.id is used to dynamically fetch blog data
-  const postId = params.id;
+// Related posts would typically be fetched from a database
+const relatedPosts = [
+  {
+    id: 2,
+    title: "How to Choose the Perfect Venue for Your Event",
+    excerpt: "A comprehensive guide to selecting the ideal venue...",
+    image: "/placeholder.svg?height=300&width=500",
+    date: "February 28, 2025",
+    author: "Jamie Chen",
+  },
+  {
+    id: 5,
+    title: "Leveraging Technology to Enhance Event Engagement",
+    excerpt: "Explore how the latest technologies can be used...",
+    image: "/placeholder.svg?height=300&width=500",
+    date: "January 18, 2025",
+    author: "Alex Morgan",
+  },
+  {
+    id: 7,
+    title: "5 Ways to Maximize ROI on Your Corporate Events",
+    excerpt: "Learn how to measure and maximize the return...",
+    image: "/placeholder.svg?height=300&width=500",
+    date: "December 20, 2024",
+    author: "Taylor Williams",
+  },
+]
 
-  // Here, you could fetch dynamic blog post data based on `postId` if needed
+export default function BlogPostPage({ params }: { params: { id: string } }) {
+  const postId = params.id;  // Make sure to retrieve the id properly
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -61,7 +82,7 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
             description: blogPost.excerpt,
             mainEntityOfPage: {
               "@type": "WebPage",
-              "@id": `https://eventrendz.com/blog/${params.id}`,
+              "@id": `https://eventrendz.com/blog/${postId}`,
             },
           }),
         }}
@@ -230,14 +251,7 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
                 <p className="mb-4 text-primary-foreground/90">
                   Get the latest event planning tips and industry insights delivered to your inbox.
                 </p>
-                <input
-                  type="email"
-                  placeholder="Your email address"
-                  className="w-full rounded-md border border-primary-foreground/20 bg-primary-foreground/10 px-3 py-2 text-sm text-primary-foreground placeholder:text-primary-foreground/70 mb-4"
-                />
-                <Button variant="secondary" className="w-full">
-                  Subscribe
-                </Button>
+                <Button>Subscribe</Button>
               </div>
             </div>
           </div>
