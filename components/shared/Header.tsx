@@ -105,9 +105,6 @@ export default function Header() {
               <Link href="/pricing" className="font-medium hover:text-primary px-2 py-1" onClick={toggleMobileMenu}>
                 Pricing
               </Link>
-              <Link href="/blog" className="font-medium hover:text-primary px-2 py-1" onClick={toggleMobileMenu}>
-                Blog
-              </Link>
               <Link href="/contact" className="font-medium hover:text-primary px-2 py-1" onClick={toggleMobileMenu}>
                 Contact
               </Link>
